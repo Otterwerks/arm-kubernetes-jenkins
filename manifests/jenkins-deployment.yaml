@@ -28,8 +28,6 @@ spec:
           mountPath: /var/jenkins_home
         - name: docker-sock-volume
           mountPath: /var/run/docker.sock
-      imagePullSecrets:
-      - name: registry-secret
       volumes:
       - name: jenkins-home
         persistentVolumeClaim:
